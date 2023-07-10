@@ -1,0 +1,1 @@
+find the first occurance in array using binarry search
