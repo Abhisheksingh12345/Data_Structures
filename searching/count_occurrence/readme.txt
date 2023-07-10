@@ -1,0 +1,1 @@
+You need to find all the occurance count of element in array
