@@ -1,0 +1,1 @@
+count the frequencies of a given no.
