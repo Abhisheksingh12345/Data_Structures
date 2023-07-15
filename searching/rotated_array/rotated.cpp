@@ -17,7 +17,7 @@ int apply_with_binary(int arr[], int x, int n) {
     int low = 0;
     int high = n-1;
     while(low <= high) {
-        int mid = (low+high)-2;
+        int mid = (low+high)/2;
         if(arr[mid] == n) return mid;
         if(arr[0] <= arr[mid] ) {
             if(x >= arr[low] && x < arr[mid])
