@@ -1,10 +1,14 @@
 #include<iostream>
 int peak(int arr[], int size);
 using namespace std;
+void more_peak(int arr[], int n) {
+    
+}
 int main() {
     int arr[]{5,80,40,30,20,50,60};
     int size = sizeof(arr)/sizeof(arr[0]);
-    cout << peak(arr, size);
+    cout << peak(arr, size); //-> this works for finding only one of the element if want to find more peak element
+    more_peak(arr, size);
 }
 int peak(int arr[], int n) {
     int low = 0;
