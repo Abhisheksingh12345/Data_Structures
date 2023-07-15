@@ -10,6 +10,10 @@ void more_peak(int arr[], int n) {
         else 
             cout << arr[0] << " ";
     }
+    for(int i = 1; i < n-1; i++) {
+        if((arr[i] >= arr[i-1]) && (arr[i] >= arr[i+1]))
+            cout << arr[i] << " ";
+    }
 }
 int main() {
     int arr[]{5,80,40,30,20,50,60};
