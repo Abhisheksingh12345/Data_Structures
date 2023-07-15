@@ -1,5 +1,6 @@
 #include<iostream>
 int rotated_array(int arr[], int element, int size);
+int search(int arr[], int element, int lower_bound, int upper_bound);
 using namespace std;
 int main() {
     int arr[]{100,200,300,10,20,30,35};
