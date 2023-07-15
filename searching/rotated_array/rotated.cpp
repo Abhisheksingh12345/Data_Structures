@@ -19,8 +19,13 @@ int apply_with_binary(int arr[], int x, int n) {
     while(low <= high) {
         int mid = (low+high)-2;
         if(arr[mid] == n) return mid;
-        
+        if(arr[0] <= n && arr[mid] < n ) {
+
+        } else {
+
+        }
     }
+    return -1;
 }
 int search(int arr[], int x, int l, int h) {
     for(int i = 0; i <= h; i++) {
