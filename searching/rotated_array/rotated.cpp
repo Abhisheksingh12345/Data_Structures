@@ -18,7 +18,12 @@ int search(int arr[], int x, int l, int h) {
 int rotated_array(int arr[], int x, int n) {
     int mid = n/2;
     if(arr[mid] == x) return mid;
-    if(arr[0] < arr[mid] && x < arr[mid]){
-        return search(arr, x, 0, mid-1);
-    }
+    if(arr[0] < arr[mid]){
+        if(arr[0] >= x && x <= arr[mid])
+            return search(arr, x, 0, mid-1);
+        else
+            return search(arr,x,mid+1, n-1);
+    } else
+        return search(arr, x, )
+
 }
