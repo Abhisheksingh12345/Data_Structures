@@ -13,6 +13,9 @@ int main() {
     // cout << rotated_array(arr, element, size);
     cout << apply_with_binary(arr, element, size);
 }
+int apply_with_binary(int arr[], int x, int n) {
+    
+}
 int search(int arr[], int x, int l, int h) {
     for(int i = 0; i <= h; i++) {
         if(arr[i] == x)
