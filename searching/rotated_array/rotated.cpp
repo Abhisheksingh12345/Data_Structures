@@ -11,6 +11,7 @@ int main() {
     //cout << search(arr, element, 0, size-1);
     // search with less then O(n)
     // cout << rotated_array(arr, element, size);
+    // give long n
     cout << apply_with_binary(arr, element, size);
 }
 int apply_with_binary(int arr[], int x, int n) {
