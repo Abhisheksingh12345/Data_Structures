@@ -2,7 +2,14 @@
 int peak(int arr[], int size);
 using namespace std;
 void more_peak(int arr[], int n) {
-    
+    if(n == 1)
+        cout << arr[0] << " ";
+    if(n == 2) {
+        if(arr[0] <= arr[1])
+            cout << arr[1] << " ";
+        else 
+            cout << arr[0] << " ";
+    }
 }
 int main() {
     int arr[]{5,80,40,30,20,50,60};
