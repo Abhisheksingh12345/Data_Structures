@@ -14,7 +14,13 @@ int main() {
     cout << apply_with_binary(arr, element, size);
 }
 int apply_with_binary(int arr[], int x, int n) {
-    
+    int low = 0;
+    int high = n;
+    while(low <= high) {
+        int mid = (low+high)-2;
+        if(arr[mid] == n) return mid;
+        
+    }
 }
 int search(int arr[], int x, int l, int h) {
     for(int i = 0; i <= h; i++) {
