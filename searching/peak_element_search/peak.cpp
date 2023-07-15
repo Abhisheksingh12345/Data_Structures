@@ -6,3 +6,10 @@ int main() {
     int size = sizeof(arr)/sizeof(arr[0]);
     cout << peak(arr, size);
 }
+int peak(int arr[], int n) {
+    int low = 0;
+    int high = n-1;
+    while(low <= high) {
+        int mid = (low+high)/2;
+    }
+}
