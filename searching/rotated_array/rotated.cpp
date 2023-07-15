@@ -1,6 +1,7 @@
 #include<iostream>
 int rotated_array(int arr[], int element, int size);
 int search(int arr[], int element, int lower_bound, int upper_bound);
+int apply_with_binary(int arr, int element, int size);
 using namespace std;
 int main() {
     int arr[]{100,200,30,10,20,30,35};
@@ -9,7 +10,8 @@ int main() {
     //O(n) lenior search
     //cout << search(arr, element, 0, size-1);
     // search with less then O(n)
-    cout << rotated_array(arr, element, size);
+    // cout << rotated_array(arr, element, size);
+    cout << apply_with_binary(arr, element, size);
 }
 int search(int arr[], int x, int l, int h) {
     for(int i = 0; i <= h; i++) {
