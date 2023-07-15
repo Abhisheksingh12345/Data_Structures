@@ -10,4 +10,20 @@ int mian() {
     cout << infinite_size_arry(arr, x);
     return 0;
 }
+int infinite_size_arry(int arr[], int seach_element) {
+    if(arr[0] == seach_element)
+    return 0;
+    int pre = 0;
+    int i = 1;
+    while(true) {
+        if(arr[i] == seach_element)
+            return i;
+        else if(arr[i] > seach_element)
+            return binary_search(arr, seach_element, pre, i);
+        else {
+            pre = i;
+            i *= 2;
+        }
+    }
+}
 
