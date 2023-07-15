@@ -1,7 +1,7 @@
 #include<iostream>
 int rotated_array(int arr[], int element, int size);
 int search(int arr[], int element, int lower_bound, int upper_bound);
-int apply_with_binary(int arr, int element, int size);
+int apply_with_binary(int arr[], int element, int size);
 using namespace std;
 int main() {
     int arr[]{100,200,30,10,20,30,35};
