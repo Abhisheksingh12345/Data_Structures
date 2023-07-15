@@ -26,4 +26,18 @@ int infinite_size_arry(int arr[], int seach_element) {
         }
     }
 }
-
+int binary_search(int arr[], int x, int l, int h) {
+    int mid = 0;
+    for(int i = l; l < h; i++){
+        mid = (l+h)/2;
+        if(arr[mid] == x){
+            return mid;
+        }
+        if(arr[mid] < x){
+            l = mid+1;
+        }else if (arr[mid] > x) {
+            h = mid-1;
+        }
+    }
+    return -1;
+}
