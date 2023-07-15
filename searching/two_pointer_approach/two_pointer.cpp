@@ -1,5 +1,6 @@
 #include<iostream>
 void fun(int arr[], int sum, int size);
+using namespace std;
 int main() {
     int arr[]{2,5,8,12,30};
     int size = sizeof(arr)/sizeof(arr[0]);
