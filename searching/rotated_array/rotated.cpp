@@ -6,6 +6,8 @@ int main() {
     int arr[]{100,200,300,10,20,30,35};
     int element  = 100;
     int size = sizeof(arr)/sizeof(arr[0]);
+    //O(n) lenior search
+    //cout << search(arr, element, 0, size-1);
     cout << rotated_array(arr, element, size);
 }
 int search(int arr[], int x, int l, int h) {
