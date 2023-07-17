@@ -11,6 +11,13 @@ int main() {
     return 0;
 }
 
+bool triplet2(int arr[], int sum, int n) {
+    for(int i = 0; i < n-1; i++) {
+        if(two_pointer_approch(arr, arr[i]-sum, i++)) 
+            return true;
+    }
+    return false;
+}
 bool triplet(int arr[], int sum, int n) {
     int start = 0;
     int end = n-1;
