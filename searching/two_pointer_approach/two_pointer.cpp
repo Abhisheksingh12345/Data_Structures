@@ -8,13 +8,14 @@ int main() {
     //this fun is used in sorted and un sorted array
     fun(arr, sum, size);
     return 0;
-}
+} 
+
 void fun(int arr[], int sum, int size) {
     int arr2[500]{0};
     arr2[abs(sum-arr[0])]++;
-    for(int i = 0; i < size; i++) {
-        if(arr2[i] > 0) {
-            cout << arr[i] << " + " << i << " = " << sum;
+    for(int i = 1; i < size; i++) {
+        if(arr2[arr[i]] > 0) {
+            cout << arr[i] << " + " << sum - arr[i] << " = " << sum;
             break;
         }
         arr2[abs(sum-arr[i])]++;
