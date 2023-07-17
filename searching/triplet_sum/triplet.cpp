@@ -1,13 +1,16 @@
 #include<iostream>
 bool triplet(int [], int , int);
+bool triplet2(int[], int, int);
+bool two_pointer_approch(int arr[], int sum , int start);
 using namespace std;
 int main() {
     int arr[] {2,4,8,9,20,40,41};
     int sum = 32;
     int size = sizeof(arr)/ sizeof(arr[0]);
-    cout << triplet(arr, sum, size) ;
+    // cout << triplet(arr, sum, size) ;
     return 0;
 }
+
 bool triplet(int arr[], int sum, int n) {
     int start = 0;
     int end = n-1;
