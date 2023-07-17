@@ -10,10 +10,21 @@ int main() {
     // cout << triplet(arr, sum, size) ;
     return 0;
 }
-
+bool two_pointer_approch(int arr[], int sum, int start, int end) {
+    while(start < end) {
+        int inner_sum = arr[start] + arr[end];
+        if(inner_sum == sum) 
+            return true;
+        else if(inner_sum > sum) {
+            end--;
+        } else 
+            start++;
+    }
+    return false;
+}
 bool triplet2(int arr[], int sum, int n) {
     for(int i = 0; i < n-1; i++) {
-        if(two_pointer_approch(arr, arr[i]-sum, i++)) 
+        if(two_pointer_approch(arr, arr[i]-sum, i++, n-1)) 
             return true;
     }
     return false;
