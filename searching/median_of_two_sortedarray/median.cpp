@@ -21,8 +21,8 @@ void fill_brr(int brr[], int arr[], int n) {
     }
 } 
 double mediun(int arr[], int arr2[], int s1, int s2) {
-    int high = (arr[s1-1] >= arr2[s2-1]) ? s1 : s2;
-    int brr[high] {0};
+    int high = (arr[s1-1] >= arr2[s2-1]) ? arr[s1-1] : arr2[s2-1];
+    int brr[high+1] {0};
     int newarr[s1+s2];
     fill_brr(brr, arr, s1);
     fill_brr(brr, arr2, s2);
