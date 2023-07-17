@@ -15,9 +15,18 @@ void fill_brr(int brr[], int arr[], int n) {
     }
 } 
 double mediun(int arr[], int arr2[], int s1, int s2) {
-    int brr[500] {0};
+    int high = (arr[s1-1] >= arr2[s2-1]) ? s1 : s2;
+    int brr[high] {0};
+    int newarr[s1+s2];
     fill_brr(brr, arr, s1);
     fill_brr(brr, arr2, s2);
-    
+    // here used size used hard coded
+    int j = 0;
+    for(int i = 0; i < high; i++) {
+        if(brr[i] > 0) {
+            newarr[j++] = brr[i]; 
+        }
+    }
+    return get_median(newar, s1+s2);
 
 }
