@@ -26,13 +26,12 @@ double mediun(int arr[], int arr2[], int s1, int s2) {
     int newarr[s1+s2];
     fill_brr(brr, arr, s1);
     fill_brr(brr, arr2, s2);
-    // here used size used hard coded
     int j = 0;
     for(int i = 0; i < high; i++) {
         if(brr[i] > 0) {
             newarr[j++] = brr[i]; 
         }
     }
-    return get_median(newar, s1+s2);
+    return get_median(newarr, s1+s2);
 
 }
