@@ -8,3 +8,10 @@ int main() {
     int size_2 = sizeof(arr2)/ sizeof(arr2[0]);
     cout << mediun(arr, arr, size_1, size_2);
 }
+double mediun(int arr[], int arr2[], int s1, int s2) {
+    int brr[500] {0};
+    fill_brr(brr, arr, s1);
+    fill_brr(brr, arr2, s2);
+    
+
+}
