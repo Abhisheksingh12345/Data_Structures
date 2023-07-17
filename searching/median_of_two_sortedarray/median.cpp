@@ -2,6 +2,12 @@
 double mediun(int [], int [], int size_1, int size_2);
 void fill_brr(int brr[], int arr[], int n);
 using namespace std;
+double get_median(int arr[], int n) {
+    if(n%2 == 0) {
+        return (arr[n/2] + arr[int(n/2)+1])/2;
+    } else  
+        return arr[n/2]/2;
+}
 int main() {
     int arr[] {10,20,30,40,50};
     int arr2[] {5,15,25,35,45};
