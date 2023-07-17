@@ -5,7 +5,7 @@ int main() {
     int arr[]{2,5,8,12,30};
     int size = sizeof(arr)/sizeof(arr[0]);
     int sum = 17;
-    //this fun is used in sorted and un sorted array
+    //this fun is used in sorted and un sorted array assuming you have unsorted array
     fun(arr, sum, size);
     return 0;
 } 
