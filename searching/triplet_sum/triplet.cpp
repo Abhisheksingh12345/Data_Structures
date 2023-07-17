@@ -8,13 +8,16 @@ int main() {
     int sum = 32;
     int size = sizeof(arr)/ sizeof(arr[0]);
     // cout << triplet(arr, sum, size) ;
+    cout << triplet2(arr, sum, size) ;
     return 0;
 }
 bool two_pointer_approch(int arr[], int sum, int start, int end) {
     while(start < end) {
         int inner_sum = arr[start] + arr[end];
-        if(inner_sum == sum) 
+        if(inner_sum == sum) { 
+            cout << arr[start]  << " + " <<  arr[end] << " + ";
             return true;
+        }
         else if(inner_sum > sum) {
             end--;
         } else 
@@ -24,7 +27,8 @@ bool two_pointer_approch(int arr[], int sum, int start, int end) {
 }
 bool triplet2(int arr[], int sum, int n) {
     for(int i = 0; i < n-1; i++) {
-        if(two_pointer_approch(arr, arr[i]-sum, i++, n-1)) 
+        if(two_pointer_approch(arr, abs(arr[i]-sum), i++, n-1))
+            cout << arr[i] << " = " << sum;
             return true;
     }
     return false;
