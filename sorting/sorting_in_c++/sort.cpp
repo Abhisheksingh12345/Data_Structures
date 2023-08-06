@@ -19,12 +19,18 @@ int main() {
     }
     std::cout << std::endl;
     std::vector<int> arr_2 = {2,4,68,45,63,6,7,2,5,45,7,88,5,6,2,4,8};
+    /**
+     * @brief .begin() -> give reference (address) of first
+     *        .end()   -> give refernce (address) of beyong last.
+     */
     std::sort(arr_2.begin(), arr_2.end());
     for (int i : arr_2) {
        std::cout << i << " ";
     }
-
-
-
+    /**
+     * @brief Now using custom comparision
+     * 
+     * 
+     */
 
 }
