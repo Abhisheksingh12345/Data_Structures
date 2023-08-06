@@ -40,9 +40,13 @@ int main() {
        std::cout << i << " ";
     }
     /**
-     * @brief Now using custom comparision
-     * 
-     * 
+     * @brief Now using custom comparision in pair collection data
      */
+    int arr_3[][2] = {{3,5},{10,5},{3,9},{4,3}};
+    int m = sizeof(arr_3)/sizeof(arr_3[0]);
+    std::sort(arr_3, arr_3+m, comparing);
+    for (int i : arr_3) {
+       std::cout << i << " ";
+    }
 
 }
