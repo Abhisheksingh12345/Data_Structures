@@ -15,5 +15,11 @@ int main() {
      */
     
     std::sort(arr, arr+n);
+    for (int i : arr) {
+       std::cout << i << " ";
+    }
+    std::vector<int> arr_2 = {2,4,68,45,63,6,7,2,5,45,7,88,5,6,2,4,8};
+    
+
 
 }
