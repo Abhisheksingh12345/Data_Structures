@@ -8,3 +8,17 @@ int main() {
     int low = 0;
     hoare_partition(arr, high, low);
 }
+int hoare_partition(int arr[], int h, int l) {
+    int pivot = arr[l];
+    int i = l-1;
+    int j = h+1;
+    try {
+        
+            throw -1;
+
+    } catch (int error_code) {
+        return error_code;
+    }  
+    
+    return 0;
+}
