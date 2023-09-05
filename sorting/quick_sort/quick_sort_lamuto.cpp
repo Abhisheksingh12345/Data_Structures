@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 int lamuto_partition(int [], int , int);
+void qsort(int[], int, int);
+
 void swap(int arr[], int index_1, int index_2) {
     int temp = arr[index_1];
     arr[index_1] = arr[index_2];
     arr[index_2] = temp;
 }
-void qsort(int[], int, int);
+
 void display(int arr[], int high) {
     for(int i = 0; i < high; i++)
         cout << arr[i] << ' ';
