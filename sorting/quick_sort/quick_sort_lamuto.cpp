@@ -9,3 +9,6 @@ int main() {
     int high = size-1;
     qsort(arr, low, high);
 }
+void qsort(int arr[], int low, int high) {
+
+}
