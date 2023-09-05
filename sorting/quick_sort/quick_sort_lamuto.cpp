@@ -8,9 +8,12 @@ int main() {
     int low = 0;
     int high = size-1;
     qsort(arr, low, high);
+    
 }
 void qsort(int arr[], int low, int high) {
     if(low < high) {
         int p = lamuto_partition(arr, low, high);
+        qsort(arr, low, p+1);
+        qsort(arr, p+1, high);
     }
 }
