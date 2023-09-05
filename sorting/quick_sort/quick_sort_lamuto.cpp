@@ -23,3 +23,15 @@ void qsort(int arr[], int low, int high) {
         qsort(arr, p+1, high);
     }
 }
+
+int lamuto_partition(int arr[], int low, int high) {
+    int i = low-1;
+    for(int j = low; j < high-1; j++) {
+        if(arr[j] < arr[high]) {
+            i++;
+            swap(arr, i, j);
+        }
+    }
+    swap(arr, i+1, high);
+    return i+1;
+}
