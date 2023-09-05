@@ -10,5 +10,7 @@ int main() {
     qsort(arr, low, high);
 }
 void qsort(int arr[], int low, int high) {
-
+    if(low < high) {
+        int p = lamuto_partition(arr, low, high);
+    }
 }
