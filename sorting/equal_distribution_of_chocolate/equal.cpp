@@ -9,3 +9,7 @@ void main() {
     for(int i : packets) 
         cout << i << ' ';
 }
+vector<int> getPackets(int arr[], int size) {
+    vector<int> packets;
+
+}
