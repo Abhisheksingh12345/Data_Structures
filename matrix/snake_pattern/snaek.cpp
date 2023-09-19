@@ -6,6 +6,13 @@ using namespace std;
 void snake(int *arr[][_C], int row)
 {
 }
+void traverse(int *arr[][_C], int row) {
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j<  _C; j++)
+            cout << arr[i][j] <<" ";
+        cout << endl;
+    }
+}
 int maine()
 {
     int *arr[4];
