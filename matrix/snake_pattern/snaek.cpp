@@ -15,7 +15,7 @@ void traverse(int *arr[][_C], int row) {
 }
 int maine()
 {
-    int *arr[4];
+    int *arr[][_C];
     for (int i = 0; i < 4; i++)
         arr[i] = new int[_C];
     int a = 0;
@@ -27,6 +27,6 @@ int maine()
         }
     }
     cout << "Normal Traverse" << endl;
-    traverse();
+    traverse(arr, 4);
     cout << "Snake Traverse" << endl;
 }
