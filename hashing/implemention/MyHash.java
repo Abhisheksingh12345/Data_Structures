@@ -41,6 +41,14 @@ public class MyHash {
     }
     public static void main(String[] args) {
         MyHash myHash = new MyHash(7);
+        myHash.insert(70);
+        myHash.insert(71);
+        myHash.insert(9);
+        myHash.insert(56);
+        myHash.insert(72);
+        System.out.println(myHash.search(56));
+        System.out.println(myHash.search(57));
+
         // System.out.println("My bucket size is : "+ myHash.hash_table[0].size());
     }
 }
