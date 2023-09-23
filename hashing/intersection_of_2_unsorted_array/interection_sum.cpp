@@ -11,8 +11,11 @@ int main() {
 }
 void intersect_elements(int arr[], int a, int brr[],int b) {
     unordered_set<int> set;
-    for(int i = 0; i < a; i++)  
-        set.insert(arr[i]);
-   
+    for(int i = 0; i < b; i++)  
+        set.insert(brr[i]);
+    for(int i = 0; i < a; i++) {
+        if(set.find(arr[i]) != set.end())
+            cout << arr[i] << ' ';
+    }
 
 }
