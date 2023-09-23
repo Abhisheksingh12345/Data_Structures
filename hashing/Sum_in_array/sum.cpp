@@ -10,11 +10,19 @@ int main() {
 }
 bool isSumContaine(int arr[], int sum, int size) {
     //Methos 1 :
-        int b[9999] {0};
-        for(int i = 0 ;i < size; i++) {
-            if(b[arr[i]] > 0)
+        // int b[9999] {0};
+        // for(int i = 0 ;i < size; i++) {
+        //     if(b[arr[i]] > 0)
+        //         return true;
+        //     b[(sum-arr[i])]++;
+        // }
+    //Method 2 :
+        unordered_set<int> set;
+        for(int i = 0; i < size; i++) {
+            if(set.find(arr[i]) != set.end())   
                 return true;
-            b[(sum-arr[i])]++;
+            else    
+                set.insert(sum - arr[i]);
         }
         return false;
 }
