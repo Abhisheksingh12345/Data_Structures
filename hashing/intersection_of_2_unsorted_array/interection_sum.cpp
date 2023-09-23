@@ -9,3 +9,7 @@ int main() {
     int b_size = sizeof(brr)/sizeof(brr[0]);
     intersect_elements(arr, a_size, brr, b_size);
 }
+void intersect_elements(int arr[], int a, int brr[],int b) {
+    
+
+}
