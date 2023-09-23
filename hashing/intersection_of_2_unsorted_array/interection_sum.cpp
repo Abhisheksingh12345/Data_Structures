@@ -10,6 +10,9 @@ int main() {
     intersect_elements(arr, a_size, brr, b_size);
 }
 void intersect_elements(int arr[], int a, int brr[],int b) {
-    
+    unordered_set<int> set;
+    for(int i = 0; i < a; i++)  
+        set.insert(arr[i]);
+   
 
 }
