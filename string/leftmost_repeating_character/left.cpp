@@ -12,4 +12,10 @@ int left_most_repeating_char_index(string str) {
     int arr[256]{0};
     for(auto i : str)
         arr[(int)i]++;
+    for(int i = 0; i < str.size(); i++) 
+        if(arr[(int)str[i]] > 1)
+            return i;
+    return -1;
+    
+
 }
