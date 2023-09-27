@@ -20,5 +20,6 @@ int numJewelsInStones(string jewels, string stones) {
     }
 int main() {
 
-    return 0
+    cout<< numJewelsInStones("z","ZZ");
+    return 0;
 }
