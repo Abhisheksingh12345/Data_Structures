@@ -1,5 +1,8 @@
 #include <iostream>
 #include "node.h"
+bool add_first(Node* head, int x) {
+    
+}
 int main() {
     Node* head = new Node(10);
     Node* temp_1 = new Node(20);
