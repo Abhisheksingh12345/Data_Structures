@@ -1,21 +1,19 @@
 #include <iostream>
 #include "node.h"
 using namespace std;
-bool add_first(Node* head, int x) {
+Node* add_first(Node* head, int x) {
     try
     {
         /* code */
     Node* node = new Node(x);
     node->addresss = head;
-    head = node;
+    return node;
     }
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
-        return false;
+        return NULL;
     }
-    
-    return true;
 }
 void traversal(Node* head) {
     if(head == NULL)
@@ -37,7 +35,7 @@ int main() {
     head->addresss = temp_1;
     temp_1->addresss = temp_2;
     int x = 5;
-    add_first(head, x);
+    head = add_first(head, x);
     traversal(head);
 }
 
