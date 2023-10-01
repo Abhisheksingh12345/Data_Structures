@@ -1,5 +1,6 @@
 #include <iostream>
 #include "node.h"
+using namespace std;
 bool add_first(Node* head, int x) {
     try
     {
