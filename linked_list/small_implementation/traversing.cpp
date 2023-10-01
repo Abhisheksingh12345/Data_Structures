@@ -23,3 +23,10 @@ void traversal(Node* head) {
     }
 
 }
+int main() {
+    Node* head = new Node(10);
+    Node* temp_1 = new Node(20);
+    Node* temp_2 = new Node(30);
+    
+
+}
