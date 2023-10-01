@@ -16,5 +16,7 @@ void traversal(Node* head) {
         cout << "NULL";
         return ;
     }
+    Node* temp = head;
     
+
 }
