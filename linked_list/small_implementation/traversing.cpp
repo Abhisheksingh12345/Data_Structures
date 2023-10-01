@@ -10,3 +10,11 @@ struct Node
     }
     /* data */
 };
+void traversal(Node* head) {
+    if(head == NULL)
+    {
+        cout << "NULL";
+        return ;
+    }
+    
+}
