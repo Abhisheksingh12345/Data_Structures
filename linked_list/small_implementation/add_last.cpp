@@ -5,5 +5,6 @@ bool add_last(Node* head, int x){
     Node* temp = head;
     while(temp->addresss != NULL)
         temp = temp->addresss;
+    temp->addresss = new Node(x);
     
 }
