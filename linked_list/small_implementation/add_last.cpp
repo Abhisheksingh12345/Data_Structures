@@ -6,6 +6,7 @@ bool add_last(Node* head, int x){
     while(temp->addresss != NULL)
         temp = temp->addresss;
     temp->addresss = new Node(x);
+    return true;
 }
 void traversal(Node* head) {
     if(head == NULL)
@@ -27,6 +28,6 @@ int main() {
     head->addresss = temp_1;
     temp_1->addresss = temp_2;
     int x = 5;
-    head = add_last(head, x);
+    add_last(head, x);
     traversal(head);
 }
