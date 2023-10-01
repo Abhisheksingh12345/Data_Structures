@@ -7,6 +7,19 @@ bool add_last(Node* head, int x){
         temp = temp->addresss;
     temp->addresss = new Node(x);
 }
+void traversal(Node* head) {
+    if(head == NULL)
+    {
+        cout << "NULL";
+        return ;
+    }
+    Node* temp = head;
+    while(temp != NULL) {
+        cout<< temp->no << " ";
+        temp = temp->addresss;
+    }
+
+}
 int main() {
     Node* head = new Node(10);
     Node* temp_1 = new Node(20);
