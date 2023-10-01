@@ -36,5 +36,6 @@ int main() {
     head->addresss = temp_1;
     temp_1->addresss = temp_2;
     traversal(head);
+    recr_traversal(head);
 
 }
