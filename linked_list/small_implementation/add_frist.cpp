@@ -1,7 +1,20 @@
 #include <iostream>
 #include "node.h"
 bool add_first(Node* head, int x) {
+    try
+    {
+        /* code */
+    Node* node = new Node(x);
+    node->addresss = head;
+    head = node;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+        return false;
+    }
     
+    return true;
 }
 int main() {
     Node* head = new Node(10);
