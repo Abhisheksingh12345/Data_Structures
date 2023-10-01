@@ -17,6 +17,9 @@ void traversal(Node* head) {
         return ;
     }
     Node* temp = head;
-    
+    while(temp != NULL) {
+        cout<< temp->no << " ";
+        temp = temp->addresss;
+    }
 
 }
