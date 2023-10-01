@@ -23,6 +23,12 @@ void traversal(Node* head) {
     }
 
 }
+void recr_traversal(Node* head) {
+    if(head == NULL)
+        return;
+    cout << head->no << " ";
+    recr_traversal(head->addresss);
+}
 int main() {
     Node* head = new Node(10);
     Node* temp_1 = new Node(20);
