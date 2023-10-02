@@ -14,6 +14,12 @@ void traversal(Node* head) {
     }
 
 }
+void add_at(Node* head, int value, int pos) {
+    int current_pos = 1;
+    while(head != NULL) {
+        
+    }
+}
 int main() {
     Node* head = new Node(10);
     Node* temp_1 = new Node(20);
