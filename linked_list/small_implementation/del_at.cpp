@@ -22,6 +22,13 @@ bool del_at(Node* head, int pos) {
     Node* pre = NULL;
     int current_pos  = 1;
     while(head != NULL) {
+        if(current_pos == pos) {
+            if(head->addresss == NULL)
+                pre->addresss = NULL;
+            else 
+                pre->addresss = head->addresss;
+            break;
+        }
         pre = head;
         head = head->addresss;
         current_pos++;
@@ -37,7 +44,9 @@ int main() {
     head->addresss = temp_1;
     temp_1->addresss = temp_2;
     temp_2->addresss = temp_3;
-    int pos = 3;
+    int pos = 4;
+    traversal(head);
+    cout << endl;
     del_at(head, pos);
     traversal(head);
 }
