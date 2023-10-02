@@ -15,6 +15,11 @@ void traversal(Node* head) {
 
 }
 bool del_at(Node* head, int pos) {
+    if(pos == 1) {
+        cout << "Del 1st Node" << endl;
+        return true;
+    }
+    int current_pos  
     return true;
 }
 int main() {
