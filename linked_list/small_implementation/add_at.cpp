@@ -16,6 +16,7 @@ void traversal(Node* head) {
 }
 void add_at(Node* head, int value, int pos) {
     int current_pos = 1;
+    Node* node = new Node(value);
     while(head != NULL) {
         if(current_pos +1 == pos)
     }
