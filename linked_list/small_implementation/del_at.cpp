@@ -19,9 +19,10 @@ bool del_at(Node* head, int pos) {
         cout << "Del 1st Node" << endl;
         return true;
     }
+    Node* pre = NULL;
     int current_pos  = 1;
     while(head != NULL) {
-        
+
     }
     return true;
 }
