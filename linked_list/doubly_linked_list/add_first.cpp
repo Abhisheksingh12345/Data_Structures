@@ -15,6 +15,7 @@ int main() {
     temp3->pre = temp2;
     temp3->next = temp4;
     temp4->pre = temp3;
-     
+    forward_traversal(head);
+    backward_traversal(temp4);
     return 0;
 }
