@@ -1,6 +1,18 @@
 #include <iostream>
 #include "node.h"
 using namespace std;
+void forward_traversal(Node* head) {
+    if(head == NULL)
+    {
+        cout << "NULL";
+        return ;
+    }
+    while(head != NULL) {
+        cout<< head->data << " ";
+        head = head->next;
+    }
+
+}
 int main() {
     Node* head = new Node(10);
     Node* temp1 = new Node(20);
