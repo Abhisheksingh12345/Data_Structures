@@ -7,10 +7,9 @@ void forward_traversal(Node* head) {
         cout << "NULL";
         return ;
     }
-    Node* temp = head;
-    while(temp != NULL) {
-        cout<< temp->no << " ";
-        temp = temp->addresss;
+    while(head != NULL) {
+        cout<< head->data << " ";
+        head = head->next;
     }
 
 }
