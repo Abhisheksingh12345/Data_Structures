@@ -14,6 +14,9 @@ void traversal(Node* head) {
     }
 
 }
+bool del_at(Node* head, int pos) {
+    return true;
+}
 int main() {
     Node* head = new Node(10);
     Node* temp_1 = new Node(20);
