@@ -22,9 +22,11 @@ void add_at(Node* head, int value, int pos) {
             if (head->addresss == NULL)
                 head->addresss = node;
             node->addresss = head->addresss;
-            head->addresss = node;        
+            head->addresss = node;   
+            break;     
         }
         current_pos++;
+        head = head->addresss;
     }
 }
 int main() {
