@@ -19,10 +19,9 @@ void add_at(Node* head, int value, int pos) {
     Node* node = new Node(value);
     while(head != NULL) {
         if(current_pos +1 == pos) {
-            if (head->addresss == NULL)
-                head->addresss = node;
-            node->addresss = head->addresss;
-            head->addresss = node;   
+            if (head->addresss != NULL)
+                node->addresss = head->addresss; 
+                head->addresss = node;   
             break;     
         }
         current_pos++;
@@ -36,7 +35,7 @@ int main() {
     head->addresss = temp_1;
     temp_1->addresss = temp_2;
     int x = 5;
-    int pos = 4;
+    int pos = 3;
     add_at(head, x, pos);
     traversal(head);
 }
