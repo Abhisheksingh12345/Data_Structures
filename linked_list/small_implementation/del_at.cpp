@@ -9,8 +9,7 @@ int main() {
     head->addresss = temp_1;
     temp_1->addresss = temp_2;
     temp_2->addresss = temp_3;
-    int x = 5;
     int pos = 3;
-    add_at(head, x, pos);
+    del_at(head, pos);
     traversal(head);
 }
