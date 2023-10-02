@@ -24,6 +24,7 @@ bool del_at(Node* head, int pos) {
     while(head != NULL) {
         pre = head;
         head = head->addresss;
+        current_pos++;
 
     }
     return true;
