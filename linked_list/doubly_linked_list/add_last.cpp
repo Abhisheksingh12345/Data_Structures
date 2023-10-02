@@ -1,7 +1,17 @@
 #include <iostream>
 #include "node.h"
 using namespace std;
+Node* add_last(Node* head, int value) {
+    Node* temp = head;
+    if(head == NULL)    
+        return new Node(value);
+    while(head->next!= NULL){
+        head = head->next;
+    }
+    head->next = new Node(value);
+    return temp;
 
+}
 void forward_traversal(Node* head) {
     if(head == NULL)
     {
