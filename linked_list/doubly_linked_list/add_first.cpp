@@ -3,9 +3,9 @@
 using namespace std;
 Node* add_first(Node* head, int num) {
     Node* node = new Node(num);
-    node->next = head->next;
-    node->pre = head;
-    head->next = node;
+    node->next = head;
+    if(head != NULL)
+        head->pre = node;
     return node;
 }
 void backward_traversal(Node* tail) {
@@ -44,8 +44,8 @@ int main() {
     temp4->pre = temp3;
     forward_traversal(head);
     // backward_traversal(temp4);
-    head = add_first(head, 0);
+    Node* _head = add_first(head, 0);
     cout << endl;
-    forward_traversal(head);
+    forward_traversal(_head);
     return 0;
 }
