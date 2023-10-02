@@ -1,6 +1,13 @@
 #include <iostream>
 #include "node.h"
 using namespace std;
+Node* add_first(Node* head, int num) {
+    Node* node = new Node(num);
+    node->next = head->next;
+    node->pre = head;
+    head->next = node;
+    return node;
+}
 void backward_traversal(Node* tail) {
     if(tail == NULL)
         return ;
