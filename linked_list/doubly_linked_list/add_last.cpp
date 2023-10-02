@@ -1,6 +1,7 @@
 #include <iostream>
 #include "node.h"
 using namespace std;
+
 void forward_traversal(Node* head) {
     if(head == NULL)
     {
@@ -29,7 +30,7 @@ int main() {
     temp4->pre = temp3;
     forward_traversal(head);
     // backward_traversal(temp4);
-    Node* _head = add_first(head, 0);
+    Node* _head = add_last(head, 0);
     cout << endl;
     forward_traversal(_head);
     return 0;
