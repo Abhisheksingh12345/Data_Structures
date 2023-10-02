@@ -18,7 +18,13 @@ void add_at(Node* head, int value, int pos) {
     int current_pos = 1;
     Node* node = new Node(value);
     while(head != NULL) {
-        if(current_pos +1 == pos)
+        if(current_pos +1 == pos) {
+            if (head->addresss == NULL)
+                head->addresss = node;
+            node->addresss = head->addresss;
+            head->addresss = node;        
+        }
+        current_pos++;
     }
 }
 int main() {
