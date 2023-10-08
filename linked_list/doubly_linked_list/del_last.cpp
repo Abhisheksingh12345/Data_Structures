@@ -1,4 +1,4 @@
-#incldue "node.h"
+#include "node.h"
 
 int main() {
     Node* head = new Node(10);
