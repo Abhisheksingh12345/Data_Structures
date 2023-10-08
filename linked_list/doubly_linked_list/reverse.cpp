@@ -16,8 +16,7 @@ int main() {
     temp3->next = temp4;
     temp4->pre = temp3;
     forward_traversal(head);
-    // backward_traversal(temp4);
-    Node* _head = add_first(head, 0);
+    reverse(head);
     cout << endl;
     forward_traversal(_head);
     return 0;
