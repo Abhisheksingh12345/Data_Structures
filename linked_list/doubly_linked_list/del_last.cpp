@@ -2,6 +2,12 @@
 Node* del_last(Node* head) {
     if(head == NULL)
         return NULL;
+    if (head->next == NULL)
+    {
+        delete head;
+        return NULL;
+    }
+    
 }
 int main() {
     Node* head = new Node(10);
