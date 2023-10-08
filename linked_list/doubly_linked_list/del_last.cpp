@@ -1,6 +1,7 @@
 #include "node.h"
 Node* del_last(Node* head) {
-    
+    if(head == NULL)
+        return NULL;
 }
 int main() {
     Node* head = new Node(10);
