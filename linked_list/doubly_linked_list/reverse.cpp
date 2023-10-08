@@ -1,6 +1,9 @@
 #include <iostream>
 #include "node.h"
 using namespace std;
+void reverse(Node* head) {
+    
+}
 int main() {
     Node* head = new Node(10);
     Node* temp1 = new Node(20);
