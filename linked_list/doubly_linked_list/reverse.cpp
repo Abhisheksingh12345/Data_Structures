@@ -5,6 +5,12 @@ void reverse(Node* head) {
     if(head == NULL)
      return ;
     Node* node  = head->next;
+    while(node != NULL) {
+        head->next = head->pre;
+        head->pre = node;
+        head = node;
+        node = head->next;
+    }
 }
 int main() {
     Node* head = new Node(10);
@@ -23,6 +29,6 @@ int main() {
     forward_traversal(head);
     reverse(head);
     cout << endl;
-    forward_traversal(_head);
+    forward_traversal(head);
     return 0;
 }
