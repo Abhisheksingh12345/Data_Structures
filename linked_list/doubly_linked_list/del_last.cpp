@@ -7,7 +7,12 @@ Node* del_last(Node* head) {
         delete head;
         return NULL;
     }
-    
+    while(head->next != NULL) {
+        head = head->next;
+    }
+    delete head->next;
+    head->next = NULL;
+    return temp;
 }
 int main() {
     Node* head = new Node(10);
