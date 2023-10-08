@@ -8,7 +8,7 @@ Node* del_last(Node* head) {
         delete head;
         return NULL;
     }
-    while(head->next != NULL) {
+    while(head->next->next != NULL) {
         head = head->next;
     }
     delete head->next;
