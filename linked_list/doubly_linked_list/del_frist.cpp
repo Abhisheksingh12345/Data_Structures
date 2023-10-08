@@ -1,5 +1,11 @@
 #include "node.h"
 using namespace std;
+Node* del_frist(Node* head) {
+    if(head == NULL)
+        return NULL;
+    head = head->next;
+    return head;
+}
 int main() {
     Node* head = new Node(10);
     Node* temp1 = new Node(20);
@@ -16,8 +22,8 @@ int main() {
     temp4->pre = temp3;
     forward_traversal(head);
     // backward_traversal(temp4);
-    Node* _head = add_last(head, 0);
+    // Node* _head = add_last(head, 0);
     cout << endl;
-    forward_traversal(_head);
+    // forward_traversal(_head);
     return 0;
 }
