@@ -1,5 +1,6 @@
 #include "node.h"
 Node* del_last(Node* head) {
+    Node* temp = head;
     if(head == NULL)
         return NULL;
     if (head->next == NULL)
