@@ -2,7 +2,9 @@
 #include "node.h"
 using namespace std;
 void reverse(Node* head) {
-    
+    if(head == NULL)
+     return ;
+    Node* node  = head->next;
 }
 int main() {
     Node* head = new Node(10);
