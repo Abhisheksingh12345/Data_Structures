@@ -10,6 +10,9 @@ int main() {
     temp1->next = temp2;
     temp2->next = head;
     forward_traversal(head);
+    Node* head_ = add_frist(head, 0);
+    cout << endl;
+    forward_traversal(head_);
 
     return 0;
 }
