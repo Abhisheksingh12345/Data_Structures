@@ -20,15 +20,17 @@ void backward_traversal(Node* tail) {
         tail = tail->pre;
     }
 }
-void forward_traversal(Node* head) {
+bool forward_traversal(Node* head) {
     if(head == NULL)
     {
-        cout << "NULL";
-        return ;
+        return false;
     }
-    while(head != NULL) {
+    Node* start = head;
+    cout<< head->data << " ";
+    head = head->next;
+    while(head != start) {
         cout<< head->data << " ";
         head = head->next;
     }
-
+    return true;
 }
