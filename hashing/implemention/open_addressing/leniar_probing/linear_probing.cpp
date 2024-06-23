@@ -1,11 +1,8 @@
 #include <iostream>
 #include <vector>
+const int BUCKET = 7;
 using namespace std;
-struct hash {
-    int bucket;
-    int vector<int> list;
-    
-}
+
 int main () {
 
 
