@@ -1,7 +1,10 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 struct hash {
-    int 
+    int bucket;
+    int vector<int> list;
+    
 }
 int main () {
 
