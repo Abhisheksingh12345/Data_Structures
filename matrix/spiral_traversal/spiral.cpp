@@ -5,25 +5,25 @@ const int R = 5;
 const int C = 4;
 
 void spiral_traversal(int *arr[]) {
-    int i = 0;
-    int j = 0;
-    int row = R;
-    int col = C;
-    while(row != col) {
-        for(; j < col; j++)
-            cout << arr[i][j];
-        i++;
-        for(; i < row; i++)
-            cout << arr[i][j];
-        j--;
-        for(; j > -1; i--)
-            cout << arr[i][j];
-        i--;
-        for(; i >row; i++)
-            cout<< arr[i][j];
-        row--;
-        col--;
-    }
+    int top = 0;
+    int bottom = R-1;
+    int right = C-1;
+    int left = 0;
+    while(top !=  bottom || right != left) {
+        for(int i = top; i <= right; i++)
+            cout << arr[top][i] << " ";
+        top++;
+        for(int i = top; i <= bottom; i++)
+            cout << arr[i][right] <<' ';
+        right--;
+        for(int i =  right; i <= left; i--)
+            cout << arr[bottom][i]<< ' ';
+        bottom--;
+        for(int i = bottom; i >= top; i--)
+            cout << arr[i][left]<< ' ';
+        left++;
+    } 
+    
 }
 
 int main(){
