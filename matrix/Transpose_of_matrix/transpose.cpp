@@ -3,8 +3,16 @@
 using namespace std;
 
 void tranpose(int * arr[], int row) {
-    
-
+    int k = 0;
+    while( k < row-1) {
+        int m = k+1;
+        while(m < row) {
+            int temp = arr[k][m];
+            arr[k][m] = arr[m][k];
+            arr[m][k] = temp;
+            m++;        }
+        k++;
+    }
 }
 void traverse(int *arr[], int row)
 {
@@ -27,6 +35,7 @@ int main() {
     traverse(arr , 4);
     cout << "Transpose Traversal" << endl;
     tranpose(arr, 4);
+    traverse(arr , 4);
     
     return 0;
 }
