@@ -13,7 +13,17 @@ int hoare_partition(int arr[], int h, int l) {
     int i = l-1;
     int j = h+1;
     try {
-        
+        while(true) {
+            do {
+                i++;
+            } while(arr[i] > pivot);
+            do {
+                j--;
+            } while(arr[j] < pivot);
+            if(i > j)
+                return j;
+            
+        }
             throw -1;
 
     } catch (int error_code) {
