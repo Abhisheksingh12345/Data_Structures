@@ -1,13 +1,9 @@
 #include <iostream>
 using namespace std;
-int lamuto_partition(int [], int , int);
+int lamuto_partition(int[], int , int);
 void qsort(int[], int, int);
+void swap(int [], int , int );
 
-void swap(int arr[], int index_1, int index_2) {
-    int temp = arr[index_1];
-    arr[index_1] = arr[index_2];
-    arr[index_2] = temp;
-}
 
 void display(int arr[], int high) {
     for(int i = 0; i < high; i++)
@@ -23,6 +19,12 @@ int main() {
 
 }
 
+void swap(int arr[], int index_1, int index_2) {
+    int temp = arr[index_1];
+    arr[index_1] = arr[index_2];
+    arr[index_2] = temp;
+}
+
 void qsort(int arr[], int low, int high) {
     if(low < high) {
         int p = lamuto_partition(arr, low, high);
@@ -36,7 +38,8 @@ int lamuto_partition(int arr[], int low, int high) {
     for(int j = low; j < high-1; j++) {
         if(arr[j] < arr[high]) {
             i++;
-            swap(arr, i, j);
+            if(arr[i] != arr[j])
+                swap(arr, i, j);
         }
     }
     swap(arr, i+1, high);
