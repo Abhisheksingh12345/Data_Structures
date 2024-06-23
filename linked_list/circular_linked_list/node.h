@@ -35,10 +35,12 @@ bool forward_traversal(Node* head) {
     return true;
 }
 Node* add_frist(Node* head, int x) {
-    if(head == NULL)
-        return NULL;
     Node* node = new Node(x);
+    if(head == NULL)
+        node->next = node;
+    else {
     node->next = head;
+    }
     return node;
     
 }
