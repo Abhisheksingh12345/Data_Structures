@@ -6,7 +6,8 @@ using namespace std;
 int main () {
     int *arr[BUCKET];
     int *bucket[] {51,49,16,56,15,19,50};
-    
+    linear_probing(arr, bucket);
+    display(arr);
 
 
     return 1;
