@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 int numJewelsInStones(string jewels, string stones) {
-       int arr[256];
+       int arr[256]{0};
        for(char c : jewels)
         arr[c]++;
         int count = 0;
